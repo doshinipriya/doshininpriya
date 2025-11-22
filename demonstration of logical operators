@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main() {
+    int a, b;
+
+    printf("Enter two numbers: ");
+    scanf("%d %d", &a, &b);
+
+    printf("a = %d, b = %d\n", a, b);
+
+    // Logical AND
+    if (a > 0 && b > 0) {
+        printf("Both a and b are positive (a > 0 && b > 0)\n");
+    } else {
+        printf("Both a and b are not positive\n");
+    }
+
+    // Logical OR
+    if (a > 0 || b > 0) {
+        printf("At least one of a or b is positive (a > 0 || b > 0)\n");
+    } else {
+        printf("Neither a nor b is positive\n");
+    }
+
+    // Logical NOT
+    if (!(a > 0)) {
+        printf("a is not positive (!(a > 0))\n");
+    } else {
+        printf("a is positive\n");
+    }
+
+    return 0;
+}
