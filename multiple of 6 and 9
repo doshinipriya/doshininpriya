@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int num;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    // Check if multiple of 6 AND 9
+    if (num % 6 == 0 && num % 9 == 0) {
+        printf("YES\n");
+    } else {
+        printf("NO\n");
+    }
+
+    return 0;
+}
