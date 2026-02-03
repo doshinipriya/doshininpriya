@@ -1,0 +1,22 @@
+#include <stdio.h>
+struct student
+{
+    int rollno;
+    struct DOB
+    {
+        int date,month,year;
+    }d;
+};
+int main() {
+    struct student s;
+    printf("enter student details:");
+    scanf("%d",&s.rollno);
+    printf("enter student DOB(date-month-year) :");
+    scanf("%d%d%d",&s.d.date,&s.d.month,&s.d.year);
+    printf("DOB(%d) is %d-%d-%d",s.rollno,s.d.date,s.d.month,s.d.year);
+    return 0;
+}
+Output:
+enter student details:101
+enter student DOB(date-month-year) :11-9-1992
+DOB(101) is 11--9--1992
