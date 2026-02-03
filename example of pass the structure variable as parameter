@@ -1,0 +1,22 @@
+//example of pass the structure variable as parameter
+#include <stdio.h>
+struct student
+{
+    int rollno;
+    float cgpa;
+};
+void display(struct student);
+int main() {
+    struct student s;
+    printf("enter student details:");
+    scanf("%d%f",&s.rollno,&s.cgpa);
+    display(s);
+    return 0;
+}
+void display(struct student s)
+{
+    printf("cgpa(%d)is %.2f",s.rollno,s.cgpa);
+}
+output:
+enter student details:101 9.0
+cgpa(101)is 9.00
