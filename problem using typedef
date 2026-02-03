@@ -1,0 +1,25 @@
+//total and avarage by using typedef in structures
+#include <stdio.h>
+   typedef struct student 
+   {
+       int marks;
+   }  st;
+   int main()
+   {
+       int n,i,total=0;
+       float avg;
+       st s[10];
+       printf("enter no of students:");
+       scanf("%d",&n);
+       for(i=0;i<n;i++)
+       {
+           printf("enter %d student marks:",i+1);
+           scanf("%d",&s[i].marks);
+           total = total+s[i].marks;
+         
+       }
+         avg=(float)total/n; 
+         printf("Total=%d\n",total);
+         printf("Average=%.2f\n",avg);
+       return 0;
+    }
