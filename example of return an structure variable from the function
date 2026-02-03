@@ -1,0 +1,29 @@
+#include <stdio.h>
+struct student
+{
+    int rollno;
+    float cgpa;
+};
+void display(struct student);
+struct student read();
+int main() {
+    struct student s;
+    s=read();
+    display(s);
+    return 0;
+}
+struct student read()
+{
+    struct student s;
+    printf("enter student details:");
+    scanf("%d%f",&s.rollno,&s.cgpa);
+    return s;
+}
+void display(struct student s)
+{
+    printf("cgpa(%d)is %.2f",s.rollno,s.cgpa);
+}
+Out put:
+enter student details:101
+9.0
+cgpa(101)is 9.00
