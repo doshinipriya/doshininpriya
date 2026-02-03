@@ -23,3 +23,13 @@
          printf("Average=%.2f\n",avg);
        return 0;
     }
+out put:
+enter no of students:5
+enter 1 student marks:40
+enter 2 student marks:50
+enter 3 student marks:45
+enter 4 student marks:47
+enter 5 student marks:35
+Total=217
+Average=43.40
+
