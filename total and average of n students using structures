@@ -1,0 +1,34 @@
+//total and average of n students using structures
+#include <stdio.h>
+   struct student
+   {
+       int marks;
+   };
+   int main()
+   {
+       int n,i,total=0;
+       float avg;
+       struct student s[10];
+       printf("enter no of students:");
+       scanf("%d",&n);
+       for(i=0;i<n;i++)
+       {
+           printf("enter %d student marks:",i+1);
+           scanf("%d",&s[i].marks);
+           total = total+s[i].marks;
+         
+       }
+         avg=(float)total/n; 
+         printf("Total=%d\n",total);
+         printf("Average=%.2f\n",avg);
+       return 0;
+    }
+output:
+enter no of students:5
+enter 1 student marks:70
+enter 2 student marks:80
+enter 3 student marks:90
+enter 4 student marks:95
+enter 5 student marks:85
+Total=420
+Average=84.00
